@@ -1,156 +1,170 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ashish Mankar - Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--accent:#ff7a18;--muted:#6b7280;--bg:#f7f9fb}
+    *{box-sizing:border-box}
+    body{font-family:'Poppins',system-ui,Segoe UI,Arial; margin:0;background:var(--bg);color:#111}
+    .container{max-width:1000px;margin:36px auto;padding:28px;background:#fff;border-radius:12px;box-shadow:0 8px 30px rgba(12,20,30,0.06)}
+    header{display:flex;align-items:center;gap:20px}
+    .avatar{width:96px;height:96px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#ffc371);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:28px}
+    h1{margin:0;font-size:28px}
+    .sub{color:var(--muted);margin-top:6px}
+    .contacts{margin-left:auto;text-align:right}
+    .contacts div{font-size:14px;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:1fr 2fr;gap:28px;margin-top:24px}
+    .card{background:#fff;border-radius:8px;padding:18px;border:1px solid #eef2f7}
+    h3{margin:0 0 12px 0;font-size:18px}
+    ul{margin:0;padding-left:18px}
+    .pill{display:inline-block;background:#f1f5f9;color:#111;padding:6px 10px;border-radius:999px;margin:6px 6px 0 0;font-size:13px}
+    .section-row{display:flex;gap:12px;align-items:flex-start}
+    .muted{color:var(--muted)}
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    footer{margin-top:24px;text-align:center;color:var(--muted);font-size:13px}
+    .label{font-weight:600;color:#111;margin-bottom:6px}
+    .small{font-size:13px;color:var(--muted)}
+    .contact-row{display:flex;gap:18px;align-items:center;margin-top:6px}
+    @media (max-width:800px){.grid{grid-template-columns:1fr} .contacts{text-align:left;margin-top:8px}}
+  </style>
 </head>
 <body>
-    <div id="header">
-        <h1>My Resume</h1>
-        <p>Ashish Mankar</p>
-    </div>
-    <div id="content">
-        <div class="left">
-            <h3>Contact Information:</h3>
-            <p>Email: mnashish@yahoo.co.in</p>
-            <p>Phone: 9326298212</p>
-            <h3>Summary:</h3>
-            <p>Experienced software engineer with a proven track record of delivering high-quality software solutions. Skilled in Linux, AWS, Cybersecurity. Strong problem-solving abilities and a passion for learning new technologies.</p>
+  <div class="container">
+    <header>
+      <div class="avatar">AM</div>
+      <div style="flex:1">
+        <h1>Ashish Mankar</h1>
+        <div class="sub">Functional Consultant / Functional Analyst — Linux · AWS · Automation</div>
+        <div class="small">Roles: Functional Consultant — Help businesses identify problems and elicit business requirements.</div>
+        <div class="contact-row">
+          <div class="small"><strong>Contact:</strong>&nbsp;+91 9326298212</div>
+          <div class="small"><strong>Email:</strong>&nbsp;<a href="mailto:mnashish@yahoo.co.in">mnashish@yahoo.co.in</a></div>
         </div>
-        <div class="right">
-		     <h3>Skills</h3>
-			<ul>
-				<li>Linux</li>
-				<li>Ethical Hacking</li>
-				<li>Cloud Computing</li>
-				<li>AWS</li>
-				<li>Terraform</li>
-				<li>Ansible</li>
-				<li>MS-Excel</li>
-				<li>Docker</li>
-			</ul>
-			 <h3>Education qualification</h3>
-			 <ul>
-			 <li>B.COM IN COMPUTER APPLICATION</li>
-			 </ul>
-            <h3>Experience:</h3>
-            <h4>Functional Analyst at Valethi Technologies</h4>
-            <p>August 2021 - Present</p>
-            <ul>
-                <li>Liaised between IT infrastructure team and other personnel to assist with resolution of system issues.</li>
-				<li>Determined proper methodologies and procedures to use based upon project specifications.</li>
-				<li>Developed, configured and tested applications for accurate alignment with project standards.</li>
-				<li>Established priorities and drove accountability for assigned initiatives, providing leadership.</li>
-				<li>Developed and implemented reports and presentations for key stakeholders and senior management.</li>
-				<li>Professionally interacted with clients to assess business requirements and determine software needs.</li>
-				<li>Re-engineered existing computer systems to promote ease-of-use and improve system security.</li>
-				<li>Analysed existing systems and databases and recommended enhancements to solve business needs.</li>
-				<li>Offered input for complex documents to support client-ready final versions.</li>
-				<li>Collaborated with upper management to drive strategy and implement new processes.</li>
-            </ul>
-            <h4>Software Engineer at Valethi Technologies</h4>
-            <p>August 2023 - Present</p>
-            <ul>
-				<li>Installation and configuration of RedHat Enterprises Linux, Windows, MacOS.</li>
-				<li>Process Management, Firewall Management, Log Management, Services Management</li>
-				<li>Orchestrated the implementation and maintenance of secure Linux server environments to enhance
-				performance and reliability.</li>
-				<li>Configured and monitored network services including DNS, DHCP, and LDAP on Linux systems.</li>
-				<li>Resolved issues related to storage management, backups, and disaster recovery procedures through
-				troubleshooting and problem-solving.</li>
-				<li>Implemented system upgrades and patches to optimize performance and security of Linux servers.</li>
-				<li>Managed user accounts, permissions, and file systems across multiple Linux environments.</li>
-				<li>Configured and maintained network services such as DNS, DHCP, and LDAP, SAMBA, FTP on Linux systems.</li>
-				<li>Provided timely support to end users by resolving complex technical issues through troubleshooting and
-				problem-solving.</li>
-				<li>Implemented and maintained Linux servers, ensuring optimal performance and security through regular
-				updates and monitoring.</li>
-				<li>Utilized Ansible to automate server provisioning, deployment, and configuration management, reducing
-				manual workload by 50%.</li>
-				<li>Managed backups for critical data on a daily basis, utilizing tools such as rsync and tar to ensure data integrity
-				and disaster recovery.</li>
-				<li>Collaborated with cross-functional teams to troubleshoot and resolve server issues, providing timely support
-				and maintaining high availability of services.</li>
-				<li>Conducted regular backup tests and audits to verify data integrity and optimize backup processes for efficiency
-				and reliability.</li>
-				<li>Managed and maintained FreeIPA servers, including user authentication, identity management, and centralized
-				access control.</li>
-				<li>Implemented and configured rsyslog for centralized log management across multiple Linux servers, ensuring
-				efficient collection, storage, and analysis of log data.</li>
+      </div>
+    </header>
 
-            </ul>
-							
-				<html>
-				<head>
-					<title>Certifications</title>
-					<link rel="stylesheet" href="certifications.css">
-				</head>
-				<body>
-					<h4>Certifications</h4>
-					<table>
-						<thead>
-							<tr>
-								<th>Certification Name</th>
-								<th>Company</th>
-								<th>Certificate No.</th>
-								<th>Certification Verification Link</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>CEH-V9</td>
-								<td>EC-Council</td>
-								<td>ECC89202402664</td>
-								<td><a href="https://www.eccouncil.org/programs/certified-ethical-hacker-ceh/" target="_blank">Verify Certification</a></td>
-							</tr>
-							<tr>
-								<td>RHCSA</td>
-								<td>Redhat Inc.</td>
-								<td>170-045-918</td>
-								<td><a href="https://www.redhat.com/rhtapps/certification/verify/?certId=170-045-918" target="_blank">Verify Certification</a></td>
-							</tr>
-							<tr>
-								<td>RHCE</td>
-								<td>Redhat Inc.</td>
-								<td>170-045-918</td>
-								<td><a href="https://www.redhat.com/rhtapps/certification/verify/?certId=170-045-918" target="_blank">Verify Certification</a></td>
-							</tr>
-							<tr>
-								<td>Openstack</td>
-								<td>Redhat Inc.</td>
-								<td>170-045-918</td>
-								<td><a href="https://www.redhat.com/rhtapps/certification/verify/?certId=170-045-918" target="_blank">Verify Certification</a></td>
-							</tr>
-						</tbody>
-					</table>
-				</body>
-				</html>
-				<h4>Salary Details</h4>
-				<table>
-				  <thead>
-					<tr>
-					  <th>Period</th>
-					  <th>Roles</th>
-					  <th>Start Date</th>
-					  <th>Current C.T.C</th>
-					  <th>Expected C.T.C</th>
-					  <th>Notice Period</th>
-					</tr>
-				  </thead>
-				  <tbody>
-					<tr>
-					  <td>30-Aug-2021 To Till now</td>
-					  <td>Functional consultant</td>
-					  <td>30-Aug-2021</td>
-					  <td>3.12 per annum</td>
-					  <td>4.20 per annum</td>
-					  <td>3 Months</td>
-					</tr>
-				  </tbody>
-				</table>
+    <div class="grid">
+      <div>
+        <div class="card">
+          <h3>Career Objective</h3>
+          <p class="muted">Looking ahead to work in a position that offers ample opportunity to learn, grow, and excel in an organization where my knowledge can be utilized to achieve the highest professional status.</p>
         </div>
+
+        <div class="card" style="margin-top:16px">
+          <h3>Skills</h3>
+          <div class="two-col">
+            <div>
+              <span class="pill">Linux (RHEL)</span>
+              <span class="pill">Virtualization (KVM, VirtualBox)</span>
+              <span class="pill">OpenStack</span>
+              <span class="pill">AWS</span>
+              <span class="pill">Terraform</span>
+            </div>
+            <div>
+              <span class="pill">Ansible</span>
+              <span class="pill">Docker</span>
+              <span class="pill">Kubernetes (AKS, K3s, OpenShift)</span>
+              <span class="pill">Git / GitHub</span>
+              <span class="pill">Desktop Support</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h3>Certifications</h3>
+          <ul>
+            <li>CEH-V9 (EC-Council) — ECC89202402664</li>
+            <li>RHCSA (Red Hat) — 170-045-918</li>
+            <li>RHCE (Red Hat) — 170-045-918</li>
+            <li>OpenStack (Red Hat) — 170-045-918</li>
+          </ul>
+          <p class="muted" style="margin-top:8px"><p class="muted" style="margin-top:8px"><strong><a href="https://www.redhat.com/rhtapps/certification/verify/?certId=170-045-918" target="_blank">Red Hat Verification</a></strong></p>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h3>Education</h3>
+          <p><span class="label">Qualification:</span> B.Com in Computer Application</p>
+          <p class="small">Subject: Accounts and Computer</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="card">
+          <h3>AWS Experience</h3>
+
+          <h4 style="margin:6px 0">Monitoring &amp; Automation</h4>
+          <ul>
+            <li>Created and managed CloudWatch Alarms, Logs, and Dashboards for advanced monitoring.</li>
+            <li>Automated responses by integrating CloudWatch with Lambda for log-based triggers and alarms.</li>
+            <li>Configured Auto-Scaling policies for EC2 and RDS to maintain performance and optimize cost.</li>
+          </ul>
+
+          <h4 style="margin:6px 0">Serverless Architecture</h4>
+          <ul>
+            <li>Developed fully serverless applications using API Gateway, Lambda, DynamoDB, and Cognito.</li>
+            <li>Leveraged Step Functions to orchestrate complex workflows for Lambda-based applications.</li>
+            <li>Configured SNS with Lambda to enable real-time notifications and event-driven processing.</li>
+          </ul>
+
+          <h4 style="margin:6px 0">Networking &amp; Security</h4>
+          <ul>
+            <li>Designed secure VPCs with custom subnets, NAT gateways, and VPC peering.</li>
+            <li>Created granular IAM policies and roles; implemented AWS WAF and Shield.</li>
+          </ul>
+
+          <h4 style="margin:6px 0">Data Management &amp; Analytics</h4>
+          <ul>
+            <li>Managed S3 and S3 Glacier with lifecycle policies to optimize storage and cost.</li>
+            <li>Processed real-time data with Amazon Kinesis and integrated with Amazon Redshift for analytics and reporting.</li>
+          </ul>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h3>Linux &amp; Infrastructure Experience</h3>
+          <ul>
+            <li>Installation and configuration of RedHat Enterprise Linux, Windows, and macOS.</li>
+            <li>Process, firewall, log (rsyslog) and service management; centralized logging.</li>
+            <li>Configured and maintained network services: DNS, DHCP, LDAP, SAMBA, FTP.</li>
+            <li>Implemented user-auth and centralized access control with FreeIPA.</li>
+            <li>Troubleshot storage, backups, disaster recovery; managed backups with rsync and tar.</li>
+            <li>Implemented system upgrades and patch management for performance & security.</li>
+            <li>Deployed and managed OpenStack components (Nova, Neutron, Keystone, Glance, Cinder) using Horizon and CLI.</li>
+            <li>Designed and implemented containerized applications using Docker (Dockerfiles, Compose, registries).</li>
+            <li>Deployed, managed and optimized Kubernetes clusters (control plane: API Server, Scheduler, Controller Manager, ETCD) and workloads (Pods, Deployments, Services, ConfigMaps).</li>
+            <li>Managed CI/CD pipelines and automated deployments using GitHub Actions, GitLab CI/CD, or Jenkins.</li>
+          </ul>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h3>Work Experience</h3>
+          <p><strong>Functional Consultant — Valethi Technologies, Nagpur</strong><br><span class="muted">August 2021 - Present</span></p>
+          <ul>
+            <li>Liaised between IT infrastructure team and other personnel to assist with system issues resolution.</li>
+            <li>Determined proper methodologies and procedures based on project specifications.</li>
+            <li>Developed, configured, and tested applications to ensure accurate project alignment.</li>
+            <li>Established priorities and drove accountability for assigned initiatives.</li>
+            <li>Created reports and presentations for key stakeholders and senior management.</li>
+            <li>Interacted with clients to assess business requirements and determine software needs.</li>
+            <li>Re-engineered existing systems to enhance usability and security.</li>
+            <li>Analyzed existing databases and recommended enhancements for business needs.</li>
+            <li>Assisted in preparing client-ready documentation and collaborated with management to implement new processes and strategies.</li>
+          </ul>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h3>Employment Details</h3>
+          <p>Period: 30-Aug-2021 to Present<br>Role: Functional Analyst<br>Notice Period: 3 Months</p>
+        </div>
+
+      </div>
     </div>
-    <div id="footer">
-        <p>Copyright © 2024 Ashish Mankar</p>
-    </div>
+
+    <footer>
+      <div class="small">Sincerely,<br>Ashish Mankar</div>
+    </footer>
+  </div>
 </body>
 </html>
